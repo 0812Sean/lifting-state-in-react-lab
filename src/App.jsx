@@ -32,13 +32,17 @@ const App = () => {
     setStack(newStack);
   };
   return (
-    <main>
+    <div className='mainCss'>
       <h1>Burger Stacker</h1>
-      <section>
-      <IngredientList availableIngredients={availableIngredients} addToBurger={addToBurger} />
-      <BurgerStack stack={stack} removeFromBurger={removeFromBurger} />
-      </section>
-    </main>
+      <div className='divBody'>
+        <section className='child1'>
+          <IngredientList availableIngredients={availableIngredients} addToBurger={addToBurger} />
+        </section>
+        <section className='child2'>
+          <BurgerStack stack={stack} removeFromBurger={removeFromBurger} />
+        </section>
+      </div>
+    </div>
   );
 };
 

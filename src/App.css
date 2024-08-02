@@ -22,15 +22,32 @@ body,
 #root {
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
-main {
+.mainCss {
   width: 100%;
   height: 100%;
   padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.divBody{
+  display: flex;
+  flex-direction: row;
+}
+
+.child1 {
+  width: 35vw;
+  height: 100vh;
+  text-align: right;
+}
+
+.child2 {
+  width: 35vw;
+  height: 100vh;
 }
 
 section {
@@ -67,11 +84,18 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 
 button {
-  cursor: pointer;
   border-radius: 8px;
-  background-color: #1a1a1a;
   border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a !important;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
 }
